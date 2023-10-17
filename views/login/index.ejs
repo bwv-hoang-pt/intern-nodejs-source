@@ -1,0 +1,69 @@
+<div class="wrapper">
+  <div class="logo">
+    <img src="/asset/images/avatar-briswell.png" alt="Logo Briswell" />
+  </div>
+  <div class="text-center mt-4 mb-3 name">
+    Briswell Vietnam
+  </div>
+
+  <form id="adminLoginForm" class="p-3 mt-2">
+    <div class="form-field" id="emailField">
+      <label for="email">Email</label>
+      <div class="d-flex align-items-center">
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder=""
+          data-error="#emailMsg"
+          value=""
+          autocomplete="off"
+        />
+        <i
+          class="fa-sharp fa-solid fa-circle-exclamation"
+          id="checkEmailValidateIcon"
+          style="display: none;"
+        ></i>
+      </div>
+    </div>
+    <div
+      class="alert alert-danger alert-dismissible fade show justify-content-center"
+      id="emailMsg"
+      style="display: none;"
+    ></div>
+    <div class="form-field" id="passwordField">
+      <label for="password">Password</label>
+      <div class="d-flex align-items-center">
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder=""
+          data-error="#passwordMsg"
+          value=""
+          autocomplete="off"
+        />
+        <i
+          class="fa-sharp fa-solid fa-circle-exclamation"
+          id="checkPasswordValidateIcon"
+          style="display: none;"
+        ></i>
+      </div>
+    </div>
+    <div
+      class="alert alert-danger alert-dismissible fade show justify-content-center"
+      id="passwordMsg"
+      style="display: none;"
+    ></div>
+
+    <div id="errorLoginMsg"></div>
+
+    <button class="btn" id="signInBtn">Login</button>
+  </form>
+</div>
+
+<div class="modal-loading d-none" id="loading">
+  <div class="spinner-grow">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
